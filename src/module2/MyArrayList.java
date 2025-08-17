@@ -19,6 +19,7 @@ public class MyArrayList<E> {
     }
 
     public void add(E element) {
+        ensureCapacity();
         array[size] = element;
         size++;
     }
